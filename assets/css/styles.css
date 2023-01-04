@@ -3,7 +3,7 @@
 /* ------------------ ROOT VARIABLES -----------------*/
 :root {
     --color-primary: #7380ec;
-    --color-danger: #ffbd06;
+    --color-danger: #220796;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
     --color-notification: #f14029;
@@ -31,7 +31,7 @@
 .dark-theme-variables{
     --color-background: #191b1f;
     --color-white: #222c31;
-    --color-dark: #000000;
+    --color-dark: #252c66;
     --color-dark-variant: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light);

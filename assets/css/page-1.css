@@ -307,6 +307,51 @@ img {
   margin-top: 1.5rem;
 }
 
+.home__tree-1,
+.home__tree-2{
+  width: 120px;
+  position: absolute;
+  top: 18rem;
+}
+
+.home__tree-1{
+  left: -2rem;
+}
+
+.home__tree-2{
+  right: -2rem;
+}
+/* Star animation */
+@keyframes animate-star-1{
+  0%{
+    transform: scale(.7) rotate(-15deg);
+    opacity: .2;
+  }
+  50%{
+    transform: scale(1) rotate(-15deg);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(.7) rotate(-15deg);
+    opacity: .2;
+  }
+}
+
+@keyframes animate-star-2{
+  0%{
+    transform: scale(1) rotate(15deg);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(.7) rotate(15deg);
+    opacity: .2;
+  }
+  100%{
+    transform: scale(1) rotate(15deg);
+    opacity: 1;
+  }
+}
+
 .home .shape__small{
   top: -3rem;
   left: -3rem;
@@ -316,6 +361,7 @@ img {
   bottom: 5rem;
   right: -10rem;
 }
+
 
 /*=============== BUTTON ===============*/
 .button{
@@ -581,10 +627,10 @@ img {
 @media screen and (min-width: 576px){
   .home__container,
   .about__container{
-    grid-template-columns: .6fr;
+    grid-template-columns: 6fr;
     justify-content: center;
   }
-
+  
   .items__container{
     grid-template-columns: repeat(2, 200px);
   }
@@ -764,11 +810,6 @@ img {
     }
 
     @media screen and (min-width: 1248px){
-      .home__tree-1,
-      .home__tree-2{
-        width: 450px;
-      }
-
       .home__img{
         width: 600px;
         margin-top: 3rem;

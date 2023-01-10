@@ -32,10 +32,10 @@
 
                 <a href="#" class="active">
                     <span class="material-icons-sharp">school</span>
-                    <h3>Semester</h3>
+                    <h3>General</h3>
                 </a>
 
-                <a href="#">
+                <a href="./students.html">
                     <span class="material-icons-sharp">groups</span>
                     <h3>Students</h3>
                 </a>
@@ -153,52 +153,30 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Product Name</th>
-                                <th>Product Number</th>
+                                <th>Student Name</th>
+                                <th>Reg Number</th>
                                 <th>Payment</th>
                                 <th>Status</th>
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Foldable Mini Drone</td>
-                                <td>85631</td>
-                                <td>Due</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>Foldable Mini Drone</td>
-                                <td>85631</td>
-                                <td>Due</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>Foldable Mini Drone</td>
-                                <td>85631</td>
-                                <td>Due</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>Foldable Mini Drone</td>
-                                <td>85631</td>
-                                <td>Due</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>Foldable Mini Drone</td>
-                                <td>85631</td>
-                                <td>Due</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>
-                            </tr>
+                        <tbody id="tbody">
+                        
                         </tbody>
                     </table>
                     <a href="#">Show All</a>
+                </div>
+        <!-----------ADD DATA----------->
+                <div class="card">
+                    <div class="lineInput">
+                        <label>Student</label>
+                        <input type="text" id="student" placeholder="Student name">
+                    </div>
+
+                    <div class="lineInput">
+                        <label>Reg Number</label>
+                        <input type="text" id="Reg" placeholder="Reg Number">
+                    </div>
                 </div>
         </main>
         <!-----------END OF MAIN------------>
@@ -299,8 +277,20 @@
                 </div>
                 <div class="item add-product">
                     <div>
-                        <span class="material-icons-sharp">add</span>
-                        <h3>Add Product</h3>
+                        <a class="material-icons-sharp" onclick="student.save()">save</a>
+                        <h3>Save</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <a class="material-icons-sharp" onclick="student.remove()">delete</a>
+                        <h3>Remove student</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <a class="material-icons-sharp">edit</a>
+                        <h3>Edit Product</h3>
                     </div>
                 </div>
             </div>

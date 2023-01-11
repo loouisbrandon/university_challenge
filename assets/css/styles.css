@@ -29,10 +29,10 @@
 
 /*==============DARK THEME VARIABLES===============*/
 .dark-theme-variables{
-    --color-background: #191b1f;
+    --color-background: #313235;
     --color-white: #222c31;
     --color-dark: #252c66;
-    --color-dark-variant: #a3bdcc;
+    --color-dark-variant: #177cb6;
     --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
@@ -446,21 +446,36 @@ main .recent-orders a{
     border: 1px solid --color-primary;
     padding: 20px;
     margin-top: 15px;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 .lineInput{
     display: grid;
     margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.input{
-    padding: 10px;
-    border: 1px solid --color-primary;
+input{
+    width: 100%;
+    border: none;
     border-radius: 10px;
-    outline: 0;
+    padding: 15px;
+    color: #000000de;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
 }
 
+label{
+    color: #38454e;
+    font-weight: bold;
+    
+    
+}
 /*========RECENT UPDATES==========*/
 .right .recent-updates{
     margin-top: 1rem;
